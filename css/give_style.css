@@ -1,0 +1,86 @@
+#main-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    height: 700px;
+    background: url('../img/bg_rent_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.7; */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#form-box{
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+    background: url('../img/bg_rent_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.main-head1{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 600;
+    color: black;
+}
+#h1-main{ 
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    padding-top: 255px;
+}
+h1.headline{
+    font-weight: 800;
+    color: black;
+    background-color: rgba(239, 241, 241, 0.322);
+    font-size: 50px;
+}
+
+#form-box{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#form-box form{
+    width: 30%;
+}
+
+#form-box label{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Baloo Da 2', cursive;
+    
+}
+
+#form-box input,
+#form-box textarea,
+#form-box select{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+.submit-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Baloo Da 2', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

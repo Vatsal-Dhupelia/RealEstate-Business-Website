@@ -1,0 +1,365 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#main-1{
+    margin: 0px;
+    padding: 0px;
+    height: 700px;
+    background: url('../img/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 5s;
+    animation-name: bganimate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@keyframes bganimate{
+    0%{
+        background-image: url('../img/image2.jpg');
+    }
+    20%{
+        background-image: url('../img/image3.jpg');
+    }
+    40%{
+        background-image: url('../img/image5.jpg');
+    }
+    60%{
+        background-image: url('../img/image11.jpg');
+    }
+    80%{
+        background-image: url('../img/image12.jpg');
+    }
+    100%{
+        background-image: url('../img/image6.jpg');
+    }
+    
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar Logo and Image */
+#logo{
+    margin: 2px 24px;
+}
+
+#logo img{
+    margin: 4px 6px;
+    height: 59px;
+}
+/* Navigation Bar List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 22px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#h2-main{ 
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+h2.firm-name{
+    color: white;
+    font-weight: 900;
+    font-size: 4em;
+    background-color: rgba(106, 109, 110, 0.322);
+    animation-name: txtanimate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Baloo Da 2', cursive;
+    /* border-right: 4px solid black; */
+}
+h4.tagline{
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    background-color: rgba(0, 167, 245, 0.322);
+    animation-name: taglineanimate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Baloo Da 2', cursive;
+    /* border-right: 4px solid black; */
+}
+
+h1.descript1{
+    color: black;
+    font-weight: 800;
+    font-family: 'Baloo Da 2', cursive;
+    background-color: rgba(250, 140, 37, 0.322);
+    animation-name: description1-animate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Baloo Da 2', cursive;
+}
+h1.descript2{
+    color: black;
+    font-weight: 800;
+    font-family: 'Baloo Da 2', cursive;
+    background-color: rgba(250, 140, 37, 0.322);
+    animation-name: description2-animate;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#description1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.main-head1{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 600;
+    color: black;
+}
+
+#services{
+    margin: 3px;
+    display: flex;
+}
+#services .box{
+    margin: 5px 8px;
+    padding: 61px;
+    border-radius: 75px;
+    background-color: rgb(201, 230, 247);
+    border: 2px solid rgb(0, 68, 88);
+}
+
+#services .box img{
+    height: 174px;
+    display: block;
+    margin: auto;
+} 
+
+h2.sub-head1{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+p.services-description{
+    text-align: center;
+    color: black;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.service-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(143, 101, 101);
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Baloo Da 2', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main-3{
+    background: url(../img/cover.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 32%;
+    width: 100%;
+    opacity: 0.87;  
+}
+
+#partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.partner-items{
+    padding: 40px;
+}
+#partners img{
+    height: 150px;
+}
+#main-4-head{
+    padding-top: 235px;
+}
+
+#steps{
+    margin: 3px;
+    display: flex;
+}
+#steps .step-box{
+    margin: 4px 25px;
+    padding: 21px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(182, 182, 182, 0.589);
+    border: 5px solid black;
+}
+
+#steps .step-box img{
+    height: 96px;
+    display: block;
+    margin: auto;
+}
+
+p.step-description{
+    text-align: center;
+    color: rgb(41, 28, 1);
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#contact{
+    padding-top: 100px;
+    position: relative;
+}
+
+#main-5{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    opacity: 0.7;
+    background: url(../img/contact-us.png) no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'Baloo Da 2', cursive;
+    
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+.submit-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Baloo Da 2', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+#foot{
+    padding-top: 550px;
+}
+.center{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+@keyframes txtanimate {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 32ch;
+    }
+
+}
+
+@keyframes taglineanimate {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 26ch;
+    }
+
+}
+@keyframes description1-animate {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 8ch;
+    }
+}
+
+@keyframes description2-animate {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 15ch;
+    }
+}
+
+
